@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPDC FINANCE</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body> 
+    <header>
+        <nav class="navbar">
+            <!-- Hanburger icon -->
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Close Button for Mobile Menu -->
+            <div class="close-icon">
+                &times; <!-- This is the "X" symbol -->
+            </div>
+
+            <img class="web-logo" src="./Assets/website-logo.png" alt="website-logo">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#">RETAIL</a>
+                </li>
+                <li>
+                    <a href="#">SME</a>
+                </li>
+                <li>
+                    <a href="#">CORPORATE</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#">COVID 19</a>
+                </li>
+                <li>
+                    <a href="#">CAMPAIGNS</a>
+                </li>
+            </ul>
+            <div class="nav-button">
+                <img class="search" src="./Assets/search-icon.png">
+                <button>iService</button>
+            </div>
+        </nav>
+    </header> 
+
+    <main>
+        <section class="section-left">
+            <h1 class="main_heading">Chase Your</h1>
+            <h1>Dream With us</h1>
+            <p>The harder you work for something, the greater you'll feel when you acheive it. </p>
+            <div class="button">
+                <a class="apply-button" href="#" target="_blank">
+                    <button class="apply-button">APPLY ONLINE</button>
+                </a>
+                <a class="loan-button" href="#" target="_blank">
+                    <button class="loan-button">LOAN CALCULATOR</button>
+                </a>
+                <!-- <button class="apply-button">APPLY ONLINE</button> -->
+                <!-- <button class="loan-button">LOAN CALCULATOR</button> -->
+            </div>
+            <div class="bottom-img">
+                <img class="phn-img" src="./Assets/phone.png" alt="phonr">
+                <p class="number">9508443785</p>
+                <p>|</p>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./Assets/facebook.png">
+                </a>
+                
+                <a href="https://www.youtube.com/@AryanRaj-wq7tr" target="_blank">
+                    <img src="./Assets/youtube.png">
+                </a>
+                <a href="https://www.linkedin.com/in/aryan-r-220791278/" target="_blank">
+                    <img src="./Assets/linkedin.png">
+                </a>
+                <a href="https://www.instagram.com/geeks_aryan/" target="_blank">
+                    <img src="./Assets/instagram.png">
+                </a>
+            </div>
+        </section>
+        <section class="section-right">
+            <div class="car-loan">
+                <img src="./Assets/car.png" alt="">
+                <p>Car Loan</p>
+            </div>
+            <img src="./Assets/hero-image.png" alt="">
+            <div class="home-loans">
+                <img src="./Assets/car.png" alt="">
+                <p>Home Loan</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const menuIcon = document.querySelector('.menu-icon');
+          const closeIcon = document.querySelector('.close-icon');
+          const navMenu = document.querySelector('.nav-menu');
+      
+          // Toggle menu when the hamburger icon is clicked
+          menuIcon.addEventListener('click', function() {
+            navMenu.classList.add('active');
+            closeIcon.style.display = 'block'; 
+            menuIcon.style.display = 'none';
+          });
+
+          // Close menu when the close icon is clicked
+          closeIcon.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+            closeIcon.style.display = 'none'; 
+            menuIcon.style.display = 'flex';
+          });
+
+          // Close the menu when clicking anywhere outside the nav menu
+          document.addEventListener('click', function(event) {
+            // Check if the click happened outside the nav menu or the menu icon
+            if (!navMenu.contains(event.target) && !menuIcon.contains(event.target)) {
+              navMenu.classList.remove('active');
+              closeIcon.style.display = 'none'; 
+              menuIcon.style.display = 'flex';
+            }
+          });
+
+          // Prevent the click inside the menu from closing it
+          navMenu.addEventListener('click', function(event) {
+            event.stopPropagation();
+          });
+        });
+    </script>
+    
+</body>
+</html>
