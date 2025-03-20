@@ -2,6 +2,10 @@
 
 IPDC Finance is a modern and responsive website designed to provide information about various financial services offered by IPDC. The website features a clean and user-friendly interface with easy navigation and interactive elements.
 
+## Screenshot
+
+![Screenshot](Assets/Screenshot.png)
+
 ## Features
 
 - **Responsive Design**: The website is fully responsive and works seamlessly on all devices.
@@ -34,9 +38,6 @@ The project consists of the following files:
 
 The website features a clean and modern design with interactive elements such as a hamburger menu, social media links, and buttons for applying online and using the loan calculator.
 
-## Screenshot
-
-![Screenshot](Assets/Screenshot.png)
 
 ## Author
 
